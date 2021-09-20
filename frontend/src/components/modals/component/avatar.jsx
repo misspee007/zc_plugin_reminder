@@ -2,13 +2,17 @@ import React from 'react'
 
 const Avatar = ({ src, alt, isOnline }) => {
 	const onlineStyle = isOnline
-		? 'border-white bg-brand-primary'
-		: 'border-black bg-white'
+		? 'dtw-border-white dtw-bg-brand-primary'
+		: 'dtw-border-black dtw-bg-white'
 	return (
-		<div className="relative h-10 w-10 overflow-visible object-center object-cover">
-			<img src={src} alt={alt ? alt : 'avatar'} className="h-full w-full" />
+		<div className="dtw-relative dtw-h-10 dtw-w-10 dtw-overflow-visible dtw-object-center dtw-object-cover">
+			<img
+				src={src}
+				alt={alt ? alt : 'avatar'}
+				className="dtw-h-full dtw-w-full"
+			/>
 			<div
-				className={`absolute rounded-1/2 border-2 ${onlineStyle} bottom-0 -right-1 h-3 w-3 `}
+				className={`dtw-absolute dtw-rounded-1/2 dtw-border-2 ${onlineStyle} dtw-bottom-0 dtw--right-1 dtw-h-3 dtw-w-3 `}
 			></div>
 		</div>
 	)

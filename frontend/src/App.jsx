@@ -36,10 +36,10 @@ const App = () => {
 				<AdminViewOther {...modalData.modalData} />
 			)}
 			<Toaster />
-			<nav className="pt-5 px-5 pb-0  ">
+			<nav className="dtw-pt-5 dtw-px-5 dtw-pb-0  ">
 				<Nav />
 			</nav>
-			<main className="p-5 ">
+			<main className="dtw-p-5 ">
 				<Pages />
 			</main>
 		</BrowserRouter>
